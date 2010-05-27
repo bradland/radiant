@@ -15,9 +15,3 @@
       %label.checkbox{:for=>"remember_me"}= t('remember_me_in_this_browser')
     %p.buttons
       %input.button{:type => "submit", :value => t('login')}
-
-%p.version
-  = t('powered_by')
-  %a{ :href => "http://radiantcms.org" } Radiant CMS
-  = t('version')   
-  = Radiant.loaded_via_gem? ? "#{Radiant::Version} (gem)." : "#{Radiant::Version}."
